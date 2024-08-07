@@ -1,23 +1,44 @@
-## Step title
+## Using a buzzer
 
-Add an introductory sentence. What will learners achieve by the end of this step?
+There are two main types of buzzer: *active* and *passive*.
 
---- task ---
+A *passive* buzzer emits a tone when a voltage is applied across it. It also requires a specific signal to generate a variety of tones. The *active* buzzers are a lot simpler to use, so these are covered here.
 
-If working **online**, open the [starter project](https://rpf.io/p/en/projectName-on){:target="_blank"} in Scratch.
- 
-If working **offline**, open the project [starter file](https://rpf.io/p/en/projectName-get){:target="_blank"} in the Scratch offline editor. If you need to download and install Scratch, you can find it [here](https://scratch.mit.edu/download){:target="_blank"}.
+### Connecting a buzzer
 
-You should see...
- 
-![starter project](images/starter_project.png)
+An *active* buzzer can be connected just like an LED, but as they are a little more robust, you won't be needing a resistor to protect them.
 
---- /task ---
+Set up the circuit as shown below:
 
---- task ---
+![buzzer](images/buzzer-circuit.png)
 
-Step content...
++ Add `Buzzer` to the `from gpiozero import...` line:
 
---- /task ---
+    ```python
+    from gpiozero import Buzzer
+	from time import sleep
+    ```
 
---- save ---
++ Add a line below your creation of `button` and `lights` to add a `Buzzer` object:
+
+    ```python
+    buzzer = Buzzer(17)
+    ```
+
++ In GPIO Zero, a `Buzzer` works exactly like an `LED`, so try adding a `buzzer.on()` and `buzzer.off()` into your loop:
+
+    ```python
+    while True:
+        buzzer.on()
+	    sleep(1)
+        buzzer.off()
+		sleep(1)
+
+    ```
+
++ A `Buzzer` has a `beep()` method which works like an `LED`'s `blink`. Try it out:
+
+    ```python
+    while True:
+        buzzer.beep()
+    ```
