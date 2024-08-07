@@ -1,6 +1,6 @@
-title: default-project-template
+title: Raspberry Pi - Buzzer
 hero_image: images/banner.png
-description: default-project-template description
+description: Connect buzzers to your projects to add sound.
 version: 4
 listed: false
 copyedit: false
