@@ -7,6 +7,16 @@
   </div><br>
 </html>
 
+--- collapse ---
+---
+title: No YouTube? Download the video!
+---
+
+You can download all the resources for this project, including the above video [by clicking here](https://projects.raspberrypi.org/en/projects/rpi-buzzer-go){:target="_blank"}. 
+
+
+--- /collapse ---
+
 Buzzers are simple electronic devices that produce sound when an electric current passes through them. Buzzers can be used to create audible alerts and feedback in your projects.
 
 Buzzers are commonly used in various applications, such as timers, alarms, notifications, and interactive projects where auditory feedback is needed. They are easy to use and provide an effective way to draw attention to an event or action in your project.
