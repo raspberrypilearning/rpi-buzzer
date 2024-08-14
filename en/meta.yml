@@ -7,5 +7,11 @@ copyedit: false
 last_tested: "2022-05-19"
 steps:
   - title: Buzzers
+    completion:
+    - engaged
   - title: Using a buzzer
-  - title: What can I do next?
+    completion:
+    - internal
+  - title: What can you do now?
+    completion:
+    - external
