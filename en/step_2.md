@@ -20,10 +20,10 @@ Set up the circuit as shown below:
 
 Add `Buzzer` to the `from gpiozero import...` line:
 
-    ```python
-    from gpiozero import Buzzer
-	from time import sleep
-    ```
+```python
+from gpiozero import Buzzer
+from time import sleep
+```
 
 --- /task ---
 
@@ -31,9 +31,9 @@ Add `Buzzer` to the `from gpiozero import...` line:
 
 Add a line below your creation of `button` and `lights` to add a `Buzzer` object:
 
-    ```python
-    buzzer = Buzzer(17)
-    ```
+```python
+buzzer = Buzzer(17)
+```
 
 --- /task ---
 
@@ -41,14 +41,13 @@ Add a line below your creation of `button` and `lights` to add a `Buzzer` object
 
 In GPIO Zero, a `Buzzer` works exactly like an `LED`, so try adding a `buzzer.on()` and `buzzer.off()` into your loop:
 
-    ```python
-    while True:
-        buzzer.on()
-	    sleep(1)
-        buzzer.off()
-		sleep(1)
-
-    ```
+```python
+while True:
+    buzzer.on()
+    sleep(1)
+    buzzer.off()
+    sleep(1)
+```
 
 --- /task ---
 
@@ -56,10 +55,10 @@ In GPIO Zero, a `Buzzer` works exactly like an `LED`, so try adding a `buzzer.on
 
 A `Buzzer` has a `beep()` method which works like an `LED`'s `blink`. Try it out:
 
-    ```python
-    while True:
-        buzzer.beep()
-    ```
+```python
+while True:
+    buzzer.beep()
+```
 
 --- /task ---
 
