@@ -63,6 +63,56 @@ while True:
 --- /task ---
 
 
+### Using a button to activate the buzzer
+
+Now let's add a button to control your buzzer, so it only sounds when the button is pressed.
+
+--- task ---
+
+Connect a button to your Raspberry Pi as shown below:
+
+![button](images/button-circuit.png)
+
+--- /task ---
+
+--- task ---
+
+Add `Button` to your import line:
+
+```python
+from gpiozero import Button, Buzzer
+from time import sleep
+```
+
+--- /task ---
+
+--- task ---
+
+Create a `Button` object in your code:
+
+```python
+button = Button(2)
+```
+
+*(Here, `2` is the GPIO pin number connected to your button. Adjust it if you're using a different pin.)*
+
+--- /task ---
+
+--- task ---
+
+Modify your loop to activate the buzzer when the button is pressed:
+
+```python
+while True:
+    if button.is_pressed:
+        buzzer.on()
+    else:
+        buzzer.off()
+```
+
+--- /task ---
+
+Now, when you press the button, the buzzer should sound!
 
 
 
