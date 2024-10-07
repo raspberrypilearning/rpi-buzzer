@@ -1,0 +1,17 @@
+title: Raspberry Pi - Buzzer
+hero_image: images/banner.png
+description: Connect buzzers to your projects to add sound.
+version: 4
+listed: false
+copyedit: false
+last_tested: "2022-05-19"
+steps:
+  - title: Buzzers
+    completion:
+    - engaged
+  - title: Using a buzzer
+    completion:
+    - internal
+  - title: What can you do now?
+    completion:
+    - external
