@@ -91,10 +91,10 @@ from time import sleep
 Create a `Button` object in your code:
 
 ```python
-button = Button(2)
+button = Button(4)
 ```
 
-*(Here, `2` is the GPIO pin number connected to your button. Adjust it if you're using a different pin.)*
+*(Here, `4` is the GPIO pin number connected to your button. Adjust it if you're using a different pin.)*
 
 --- /task ---
 
